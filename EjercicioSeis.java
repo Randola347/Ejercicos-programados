@@ -5,6 +5,10 @@ public class EjercicioSeis {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese un número entero: ");
         int numero = scanner.nextInt();
+        while(numero<=0){
+            System.out.println("Ingrese un numero positivo: ");
+            numero = scanner.nextInt();
+        }
 
         System.out.println("Tabla de multiplicación del " + numero + ":");
 
